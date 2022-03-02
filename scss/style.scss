@@ -1,0 +1,55 @@
+*, 
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+$font_header-title: 'Gotham Pro';
+$font_header-title-p: 'Gotham Medium'; 
+$font_menu: 'MyriadPro-Regular'; 
+$font_text: 'Gotham Book';
+$text_decor: 'Roboto BoldCondensed'; 
+$color1: #ffffff;
+$color2: #11749e;
+
+body{
+
+}
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+//ХЕДЕР
+
+.header {
+    background-image: url(../images/header2.png);
+    background-repeat: no-repeat;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {}
+    &__content {}
+    &__content--text {}
+    &__content--btn {}
+}
+
+.logo {
+    &__img {}
+}
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item {}
+    &__link {}
+}
+.title {
+}
