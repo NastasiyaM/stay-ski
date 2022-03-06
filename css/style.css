@@ -67,9 +67,10 @@ a {
 
 .title {
   font-family: "Catamaran-black";
-  color: #ffffff;
+  color: #2b2b2b;
   text-transform: uppercase;
-  color: radial-gradient(circle, #4a88c1 0%, #63aacc 50%);
+  font-size: 60px;
+  letter-spacing: 0.6px;
 }
 
 .header {
@@ -100,6 +101,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 144px;
   text-align: center;
+  font-family: "Catamaran-black";
 }
 
 .header__title-p {
@@ -110,12 +112,15 @@ a {
 }
 
 .header__title-title {
+  line-height: 100px;
   font-size: 250px;
   font-weight: 700;
   letter-spacing: -12.5px;
   white-space: nowrap;
   margin-top: 150px;
-  color: #81aac9;
+  background: radial-gradient(circle, #4a88c1 0%, #63aacc 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__content {

@@ -73,9 +73,11 @@ a{
 
 .title {
     font-family: $font-title;
-    color: $color2;
+    color: $color;
     text-transform: uppercase;
-    color: radial-gradient(circle, rgba(74,136,193,1) 0%, rgba(99,170,204,1) 50%);
+    font-size: 60px;
+    letter-spacing: 0.6px;
+    
 }
 
 //ХЕДЕР
@@ -103,6 +105,7 @@ a{
         text-transform: uppercase;      
         margin-bottom: 144px;
         text-align: center;
+        font-family: "Catamaran-black";
         &-p{
             font-size: 30px;
             font-weight: 700;
@@ -111,13 +114,15 @@ a{
             
         }
         &-title{
+            line-height: 100px;
             font-size: 250px;
             font-weight: 700;
             letter-spacing: -12.5px;
             white-space: nowrap;
             margin-top: 150px;
-            color: #81aac9;
-            
+            background: radial-gradient(circle, rgba(74,136,193,1) 0%, rgba(99,170,204,1) 50%); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;                                    
         }
     }
     &__content {
@@ -169,4 +174,17 @@ a{
 
 
 
-//
+// офер
+
+.offer {
+    &__title{
+        
+    }
+    &__text {}
+    &__items {}
+    &__item {}
+    &__item-img {}
+    &__item-text {}
+    &__item-title {}
+    &__item-btn {}
+}
