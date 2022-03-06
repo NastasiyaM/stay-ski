@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: 'Catamaran-bold';
+  src: url("../fonts/catamaran-bold.eot");
+  src: local("☺"), url("../fonts/catamaran-bold.woff") format("woff"), url("../fonts/catamaran-bold.ttf") format("truetype"), url("../fonts/catamaran-bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Muli-Light';
   src: url("../fonts/Muli-Light.eot");
   src: local("☺"), url("../fonts/Muli-Light.woff") format("woff"), url("../fonts/Muli-Light.ttf") format("truetype"), url("../fonts/Muli-Light.svg") format("svg");
@@ -26,6 +34,14 @@
   font-family: 'Muli-Bold';
   src: url("../fonts/Muli-Bold.eot");
   src: local("☺"), url("../fonts/Muli-Bold.woff") format("woff"), url("../fonts/Muli-Bold.ttf") format("truetype"), url("../fonts/Muli-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli-regular';
+  src: url("../fonts/muli-regular.eot");
+  src: local("☺"), url("../fonts/muli-regular.woff") format("woff"), url("../fonts/muli-regular.ttf") format("truetype"), url("../fonts/muli-regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -49,11 +65,25 @@ a {
   color: inherit;
 }
 
+.title {
+  font-family: "Catamaran-black";
+  color: #ffffff;
+  text-transform: uppercase;
+  color: radial-gradient(circle, #4a88c1 0%, #63aacc 50%);
+}
+
 .header {
   background-image: url(../images/header2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+
+.header-img {
+  background-image: url(../images/header.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center top 200px;
 }
 
 .header__top {
@@ -68,6 +98,7 @@ a {
 
 .header__title {
   text-transform: uppercase;
+  margin-bottom: 144px;
   text-align: center;
 }
 
@@ -75,13 +106,40 @@ a {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #ffffff;
+  color: #81aac9;
 }
 
 .header__title-title {
-  font-size: 150px;
+  font-size: 250px;
   font-weight: 700;
   letter-spacing: -12.5px;
+  white-space: nowrap;
+  margin-top: 150px;
+  color: #81aac9;
+}
+
+.header__content {
+  padding-left: 210px;
+  color: #ffffff;
+  padding-bottom: 345px;
+  padding-left: 210px;
+}
+
+.header__content--text {
+  font-family: "Muli-regular";
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 55px;
+  max-width: 680px;
+}
+
+.header__content--btn {
+  font-size: 18px;
+  padding: 14px 88px;
+  border-radius: 20px;
+  background-color: #ff690f;
+  font-family: "Catamaran-bold";
+  text-transform: uppercase;
 }
 
 .menu__list {
@@ -102,10 +160,4 @@ a {
 
 .menu__item + .menu__item {
   padding-left: 40px;
-}
-
-.title {
-  font-family: "Catamaran-black";
-  color: #ffffff;
-  text-transform: uppercase;
 }
