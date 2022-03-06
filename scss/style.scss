@@ -91,7 +91,7 @@ a{
     &-img{
         background-image: url(../images/header.png);
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
         background-position: center top 200px; 
 
 
@@ -114,12 +114,12 @@ a{
             
         }
         &-title{
-            line-height: 100px;
+            line-height: 210px;
             font-size: 250px;
             font-weight: 700;
             letter-spacing: -12.5px;
             white-space: nowrap;
-            margin-top: 150px;
+            margin-top: 50px;
             background: radial-gradient(circle, rgba(74,136,193,1) 0%, rgba(99,170,204,1) 50%); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;                                    
