@@ -60,6 +60,12 @@ body {
   margin: 0 auto;
 }
 
+.container__gallery {
+  max-width: 1940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -70,7 +76,16 @@ a {
   color: #2b2b2b;
   text-transform: uppercase;
   font-size: 60px;
+  line-height: 90px;
   letter-spacing: 0.6px;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ff690f;
+  font-family: "Catamaran-bold";
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .header {
@@ -141,10 +156,6 @@ a {
 .header__content--btn {
   font-size: 18px;
   padding: 14px 88px;
-  border-radius: 20px;
-  background-color: #ff690f;
-  font-family: "Catamaran-bold";
-  text-transform: uppercase;
 }
 
 .menu__list {
@@ -165,4 +176,114 @@ a {
 
 .menu__item + .menu__item {
   padding-left: 40px;
+}
+
+.offer__title {
+  padding-top: 55px;
+  padding-left: 585px;
+}
+
+.offer__text {
+  padding-left: 340px;
+  max-width: 1295px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.offer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 160px;
+  padding-left: 300px;
+  padding-right: 290px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.offer__item {
+  text-align: center;
+}
+
+.offer__item-text {
+  font-size: 14px;
+  margin-top: 41px;
+  margin-bottom: 19px;
+}
+
+.offer__item-title {
+  font-family: "Catamaran-black";
+  font-size: 24px;
+  line-height: auto;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.offer__item-btn {
+  font-size: 15px;
+  padding: 17px 23px 17px 21px;
+}
+
+.gallery__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 0;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  justify-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 155px;
+  max-width: 1940px;
+}
+
+.gallery__items-img {
+  margin: 0;
+  padding: 0;
+  max-width: 640px;
+}
+
+.gallery__items-img:nth-child(3), .gallery__items-img:nth-child(4) {
+  grid-row: span 2;
+}
+
+.crew__content-title {
+  padding-left: 590px;
+  margin-bottom: 60px;
+}
+
+.crew__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 210px;
+  padding-right: 210px;
+  margin-bottom: 165px;
+}
+
+.crew__item-position {
+  font-size: 14px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.crew__item-name {
+  font-family: "Catamaran-black";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
 }

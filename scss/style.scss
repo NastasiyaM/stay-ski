@@ -66,6 +66,12 @@ body{
     margin: 0 auto;
 }
 
+.container__gallery{
+    max-width: 1940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -76,8 +82,17 @@ a{
     color: $color;
     text-transform: uppercase;
     font-size: 60px;
+    line-height: 90px;
     letter-spacing: 0.6px;
     
+}
+
+.button{
+    border-radius: 10px;
+    background-color: $color-button;
+    font-family: $font-button;
+    text-transform: uppercase;
+    color: $color2;
 }
 
 //ХЕДЕР
@@ -141,10 +156,7 @@ a{
     &__content--btn {
         font-size: 18px;
         padding: 14px 88px;
-        border-radius: 20px;
-        background-color: $color-button;
-        font-family: $font-button;
-        text-transform: uppercase;
+        
         
     }
 }
@@ -178,13 +190,117 @@ a{
 
 .offer {
     &__title{
+        padding-top: 55px;
+        padding-left: 585px;
+    }
+    &__text {
+        padding-left: 340px;
+        max-width: 1295px;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 160px;
+        padding-left: 300px;
+        padding-right: 290px;
+        align-items: flex-end;
+    }
+    &__item {
+        text-align: center;        
+    }
+    
+
+    &__item-img {}
+    &__item-text {
+        font-size: 14px;
+        margin-top: 41px;
+        margin-bottom: 19px;
+    }
+    &__item-title {
+        font-family: $font-title;
+        font-size: 24px;
+        line-height: auto;
+        margin: 0;
+        margin-bottom: 30px;
         
     }
-    &__text {}
-    &__items {}
+    &__item-btn {
+        font-size: 15px;
+        padding: 17px 23px 17px 21px;
+        
+    }
+}
+
+
+
+.gallery {
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
+        align-items: stretch;
+        justify-items: stretch;
+        justify-content: center;
+        margin-bottom: 155px;
+        max-width: 1940px;
+        
+    }
+    &__items-img {
+        margin: 0;
+        padding: 0;
+        max-width: 640px;
+        
+    }
+    &__items-img:nth-child(3),
+    &__items-img:nth-child(4){
+        grid-row: span 2; 
+    }   
+}
+
+
+// GREW
+
+.crew {
+    &__content-title{
+        padding-left: 590px;
+        margin-bottom: 60px;
+
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 210px;
+        padding-right: 210px;
+        margin-bottom: 165px;
+    }
     &__item {}
-    &__item-img {}
-    &__item-text {}
-    &__item-title {}
-    &__item-btn {}
+    &__item-position {
+        font-size: 14px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    &__item-name {
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+
+//
+
+
+.about {
+    
+    &__content {}
+    &__content-title {}
+    &__content-text {}
+    &__content-items {}
+    &__content-item {}
+    &__content-count {}
 }
