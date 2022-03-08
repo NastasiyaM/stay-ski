@@ -178,6 +178,10 @@ a {
   padding-left: 40px;
 }
 
+.offer {
+  background-color: #f7f7f7;
+}
+
 .offer__title {
   padding-top: 55px;
   padding-left: 585px;
@@ -197,7 +201,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 160px;
+  padding-bottom: 160px;
   padding-left: 300px;
   padding-right: 290px;
   -webkit-box-align: end;
@@ -243,7 +247,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 155px;
   max-width: 1940px;
 }
 
@@ -257,7 +260,12 @@ a {
   grid-row: span 2;
 }
 
+.crew {
+  background-color: #f7f7f7;
+}
+
 .crew__content-title {
+  padding-top: 155px;
   padding-left: 590px;
   margin-bottom: 60px;
 }
@@ -271,7 +279,7 @@ a {
           justify-content: space-between;
   padding-left: 210px;
   padding-right: 210px;
-  margin-bottom: 165px;
+  padding-bottom: 165px;
 }
 
 .crew__item-position {
@@ -334,4 +342,59 @@ a {
 
 .about__content-info {
   font-weight: 700;
+}
+
+.testimonials {
+  background-color: #f7f7f7;
+}
+
+.testimonials__title {
+  padding-top: 160px;
+  padding-left: 618px;
+}
+
+.testimonials .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials .slick-dots li {
+  list-style: none;
+  margin: 0 9px;
+}
+
+.testimonials .slick-dots button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  background-color: #d1d8df;
+  border-radius: 50%;
+}
+
+.testimonials .slick-dots li.slick-active button {
+  background-color: #ff690f;
+}
+
+.testimonials__slider {
+  padding-top: 60px;
+  padding-left: 425px;
+  max-width: 1260px;
+  text-align: center;
+  padding-bottom: 160px;
+}
+
+.testimonials__content-img {
+  display: block;
+  margin: auto;
+}
+
+.testimonials__content-title {
+  text-transform: uppercase;
 }

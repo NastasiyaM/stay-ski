@@ -50,6 +50,8 @@ $font-button: 'Catamaran-bold';
 $color: #2b2b2b;
 $color2: #ffffff;
 $color-button: #ff690f;
+$slider-button: #d1d8df;
+$background: #f7f7f7;
 
 
 body{
@@ -189,6 +191,7 @@ a{
 // офер
 
 .offer {
+    background-color: $background;
     &__title{
         padding-top: 55px;
         padding-left: 585px;
@@ -202,7 +205,7 @@ a{
     &__items {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 160px;
+        padding-bottom: 160px;
         padding-left: 300px;
         padding-right: 290px;
         align-items: flex-end;
@@ -233,7 +236,7 @@ a{
     }
 }
 
-
+//ГАЛЕРЕЯ
 
 .gallery {
     &__items {
@@ -244,7 +247,6 @@ a{
         align-items: stretch;
         justify-items: stretch;
         justify-content: center;
-        margin-bottom: 155px;
         max-width: 1940px;
         
     }
@@ -264,7 +266,9 @@ a{
 // GREW
 
 .crew {
+    background-color: $background;
     &__content-title{
+        padding-top: 155px;
         padding-left: 590px;
         margin-bottom: 60px;
 
@@ -274,7 +278,7 @@ a{
         justify-content: space-between;
         padding-left: 210px;
         padding-right: 210px;
-        margin-bottom: 165px;
+        padding-bottom: 165px;
     }
     &__item {}
     &__item-position {
@@ -294,13 +298,12 @@ a{
 
 //
 
-
 .about {
     background-image: url(../images/about.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    
     &__content {
         padding-top: 225px;
         padding-left: 210px;
@@ -340,11 +343,51 @@ a{
 }
 
 
-//
+// слайдер
 
 .testimonials {
+    background-color: $background;
+
+    &__title{
+        padding-top: 160px;
+        padding-left: 618px;
+        
+    }
+    .slick-dots{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            list-style: none;
+            margin: 0 9px;
+        }        
+        button{
+            font-size: 0;
+            width: 13px;
+            height: 13px;
+            background-color: $slider-button;
+            border-radius: 50%;
+        }
+        li.slick-active button{
+            background-color: $color-button;
+        }
+    }
+    &__slider{
+        padding-top: 60px;
+        padding-left: 425px;
+        max-width: 1260px;
+        text-align: center;
+        padding-bottom: 160px;
+    }
     &__content-element {}
-    &__content-img {}
-    &__content-title {}
+    &__content-img {
+        display:block;
+        margin:auto;
+    }
+    &__content-title {
+        text-transform: uppercase  ;
+    }
     &__content-text {}
 }
+
+
