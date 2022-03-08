@@ -390,4 +390,55 @@ a{
     &__content-text {}
 }
 
+//
+.map {
+	width: 1280px;
+	height: 640px;
+	
+}
+[class*="copyrights-pane"] {
+	display: none !important;
+}
 
+.contacts {
+    background-color: #2f2f2f;
+    color: $color2;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        padding-left: 120px;
+        padding-top: 100px;
+    }
+    &__content-title {
+        color: $color2;
+    }
+    &__content-list {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 55px;
+        max-width: 340px;
+        text-transform: uppercase;
+    }
+    &__content-item {
+        padding-bottom: 35px;
+    }
+}
+
+.contacts-social {
+    padding-bottom: 155px;
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding-top: 65px;
+        padding: 0;
+        max-width: 155px;
+        align-items: center;
+    }
+    &__item {}
+    &__link {}
+}
