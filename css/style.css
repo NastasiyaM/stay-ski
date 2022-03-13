@@ -141,7 +141,7 @@ a {
 .header__content-aside {
   padding-left: 210px;
   position: relative;
-  z-index: 100;
+  z-index: 101;
 }
 
 .header__content--text {

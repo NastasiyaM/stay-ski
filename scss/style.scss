@@ -145,7 +145,7 @@ a{
     &__content-aside{
         padding-left: 210px;
         position: relative;
-        z-index: 100;
+        z-index: 101;
     }
     &__content--text {
         font-family: $font-text-header;
@@ -169,7 +169,8 @@ a{
 }
 
 .logo {
-    &__img {}
+    &__img {
+    }
 }
 .menu {
     &__list {
