@@ -104,14 +104,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    
-    &-img{
-        background-image: url(../images/header.png);
-        background-repeat: no-repeat;
-        background-size: 101%;
-        background-position: center top 350px;       
 
-    }
     &__top {
         display: flex;
         justify-content: space-between;
@@ -143,11 +136,16 @@ a{
                 
         }
     }
-    &__content {
-        
+    &__content {        
         color: $color2;
         padding-bottom: 345px;
+        position: relative;
+        overflow: hidden;
+    }
+    &__content-aside{
         padding-left: 210px;
+        position: relative;
+        z-index: 100;
     }
     &__content--text {
         font-family: $font-text-header;
@@ -158,9 +156,15 @@ a{
     }
     &__content--btn {
         font-size: 18px;
-        padding: 14px 88px;
+        padding: 14px 88px;        
         
-        
+    }
+    &__content-img{
+        position: absolute;
+        z-index: 99;
+        left: -110px;
+        bottom: 35px;
+
     }
 }
 

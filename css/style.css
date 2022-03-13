@@ -95,13 +95,6 @@ a {
   background-position: top;
 }
 
-.header-img {
-  background-image: url(../images/header.png);
-  background-repeat: no-repeat;
-  background-size: 101%;
-  background-position: center top 350px;
-}
-
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,7 +134,14 @@ a {
 .header__content {
   color: #ffffff;
   padding-bottom: 345px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__content-aside {
   padding-left: 210px;
+  position: relative;
+  z-index: 100;
 }
 
 .header__content--text {
@@ -155,6 +155,13 @@ a {
 .header__content--btn {
   font-size: 18px;
   padding: 14px 88px;
+}
+
+.header__content-img {
+  position: absolute;
+  z-index: 99;
+  left: -110px;
+  bottom: 35px;
 }
 
 .menu__list {
