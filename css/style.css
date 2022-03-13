@@ -98,8 +98,8 @@ a {
 .header-img {
   background-image: url(../images/header.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top 200px;
+  background-size: 101%;
+  background-position: center top 350px;
 }
 
 .header__top {
@@ -139,7 +139,6 @@ a {
 }
 
 .header__content {
-  padding-left: 210px;
   color: #ffffff;
   padding-bottom: 345px;
   padding-left: 210px;
@@ -170,7 +169,6 @@ a {
   font-family: "Muli-Bold";
   color: #ffffff;
   font-size: 16px;
-  line-height: 90px;
   letter-spacing: 0.16px;
 }
 
